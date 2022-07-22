@@ -7,10 +7,10 @@ namespace OrderTracker.Models
     public string Name { get; set; }
     public string Description { get; set; }
 
-    public Vendor(string VendorName, string VendorDescription)
+    public Vendor(string vendorName, string vendorDescription)
     {
-      Name = VendorName;
-      Description = VendorDescription;
+      Name = vendorName;
+      Description = vendorDescription;
     }
 
   }
