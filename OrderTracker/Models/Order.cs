@@ -4,16 +4,20 @@ namespace OrderTracker.Models
 {
   public class Order
   {
-    public string Name { get; set; }
+    // Change 'Details' to 'Title'
+    public string Details { get; set; }
+    // Add fields below and display inside the current 'Details' link
     // public string Description { get; set; }
+    // public string Price{ get; set; }
+    // public string Date { get; set; }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> {}; 
 
-    // ADD "string orderDescription"
-    public Order(string orderName)
+    // ADD "string orderDescription" and others
+    public Order(string orderDetails)
     {
-      Name = orderName;
-      // Description = orderDescription;
+      Details = orderDetails;
+      // Description = orderDescription; & ADD OTHERS
       _instances.Add(this);
       Id = _instances.Count;
     }
